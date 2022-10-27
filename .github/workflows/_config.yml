@@ -26,6 +26,8 @@ jobs:
   merge:
     name: merge
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@master
 
