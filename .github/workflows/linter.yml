@@ -1,4 +1,4 @@
-name: Actions
+name: My Actions
 
 on:
   push:
@@ -14,6 +14,8 @@ jobs:
     steps:
       - uses: actions/checkout@master
 
+      - run: npm install
+
       - run: npm run lint:js
 
       - run: npm run lint:css
@@ -26,6 +28,8 @@ jobs:
     if: github.event_name == 'pull_request'
     steps:
       - uses: actions/checkout@master
+
+      - run: npm install
 
       - run: npm run build
 
