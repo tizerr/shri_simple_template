@@ -2,7 +2,8 @@ name: My Actions
 
 on:
   push:
-
+    branches:
+      - master
   pull_request:
     branches:
       - master
@@ -25,7 +26,6 @@ jobs:
   merge:
     name: merge
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@master
 
