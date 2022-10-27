@@ -42,6 +42,7 @@ const config = {
     },
     mode: 'development',
     optimization: {
+        providedExports: true,
         usedExports: true,
         runtimeChunk: "single",
         splitChunks: {
@@ -50,7 +51,7 @@ const config = {
         innerGraph: true,
         moduleIds: "deterministic",
         concatenateModules: true,
-        minimize: true
+        minimize: true,
     },
 
 };
