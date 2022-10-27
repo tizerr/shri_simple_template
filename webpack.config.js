@@ -8,6 +8,7 @@ const config = {
         home: './src/pages/Home.js',
         index: './src/index.js'
     },
+
     plugins: [
         new HtmlWebpackPlugin({template: 'public/index.html'}),
         new StatoscopePlugin({
